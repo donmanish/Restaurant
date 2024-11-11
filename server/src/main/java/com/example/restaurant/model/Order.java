@@ -10,7 +10,7 @@ import lombok.Setter;
 public class Order extends BaseModel{
     private String name;
     @ManyToOne
-    private Restaurent restaurent;
+    private Restaurant restaurent;
     @ManyToOne
     private Item  items;
     private double totalPrice;

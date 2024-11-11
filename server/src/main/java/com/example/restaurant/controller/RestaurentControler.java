@@ -1,9 +1,9 @@
 package com.example.restaurant.controller;
-
-import com.example.restaurant.model.Item;
-import com.example.restaurant.model.Restaurent;
-import com.example.restaurant.model.SubItem;
+import com.example.restaurant.dto.RestaurantResponseDto;
+import com.example.restaurant.model.Restaurant;
 import com.example.restaurant.service.RestaurantService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
 //@RequestMapping("/api/v1")
 public class RestaurentControler {
 
-    private RestaurantService restaurantService;
+    private final RestaurantService restaurantService;
 
     public RestaurentControler(RestaurantService restaurantService) {
         this.restaurantService = restaurantService;
@@ -20,37 +20,48 @@ public class RestaurentControler {
 
     //create the resturant
     @PostMapping("/restaurant")
-    public Restaurent createRestaurant(@RequestBody Restaurent restaurant) {
-//        try {
-//            Restaurent restaurent = restaurantService.createRestaurent(restaurant);
-//        } catch (e)
-//        {
-//
-//        }
-       return null;
+    public ResponseEntity<Restaurant> createRestaurant(@RequestBody Restaurant restaurant) {
+        Restaurant restaurent = restaurantService.createRestaurent(restaurant);
+        if (restaurent == null) {
+           return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+        return new ResponseEntity<>(restaurent, HttpStatus.CREATED);
     }
 
 
     //read Only one resturant
     @GetMapping("/restaurant/{id}")
-    public Restaurent getRestaurantById(@PathVariable("id") int restaurantid) {
+    public Restaurant getRestaurantById(@PathVariable("id") int restaurantid) {
         return null;
     }
     //read All resturant
     @GetMapping("/restaurant")
-    public List<Restaurent> getAllRestaurant()
+    public ResponseEntity<RestaurantResponseDto> getAllRestaurant()
     {
-        return null;
+        RestaurantResponseDto restaurantResponseDto = new RestaurantResponseDto();
+        List<Restaurant> restaurent = restaurantService.getAllRestaurant();
+        restaurantResponseDto.setRestaurants(restaurent);
+
+        if (restaurent.isEmpty() || restaurent.size() == 0 || restaurent == null) {
+            restaurantResponseDto.setHttpStatus(HttpStatus.BAD_REQUEST);
+            restaurantResponseDto.setMessage("Restaurent not found or null");
+        } else {
+            restaurantResponseDto.setHttpStatus(HttpStatus.OK);
+            restaurantResponseDto.setMessage("Resturant List get successfully");
+        }
+
+        return new ResponseEntity<>(restaurantResponseDto, restaurantResponseDto.getHttpStatus());
+
     }
     //update by id resturant
     @PutMapping("/restaurant/{id}")
-    public Restaurent updateRestaurant(@PathVariable("id") int restaurantid,  @RequestBody Restaurent updaterestaurant) {
+    public Restaurant updateRestaurant(@PathVariable("id") int restaurantid, @RequestBody Restaurant updaterestaurant) {
      return null;
     }
 
     //delete by id resturant
     @DeleteMapping("/restaurant/{id}")
-    public Restaurent deleteRestaurant(@PathVariable("id") int restaurantid) {
+    public Restaurant deleteRestaurant(@PathVariable("id") int restaurantid) {
         return null;
     }
 

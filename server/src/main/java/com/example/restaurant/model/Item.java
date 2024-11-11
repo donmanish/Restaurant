@@ -1,21 +1,28 @@
 package com.example.restaurant.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.List;
 
-@Entity(name = "Items")
+@Entity(name = "items")
 @Getter
 @Setter
 public class Item extends BaseModel{
     private String title;
-    @ManyToOne
-    private SubItem  subItems;
     @Enumerated
     private ItemType itemType;
+
+    @OneToMany(mappedBy = "item" , fetch = FetchType.LAZY)
+    @JsonIgnoreProperties("sub_item")
+    private List<SubItem>  subItems;
+
+    @ManyToOne
+    @JsonBackReference
+    private Menu menu;
+
 }

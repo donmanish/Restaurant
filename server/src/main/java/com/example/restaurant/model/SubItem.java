@@ -1,6 +1,8 @@
 package com.example.restaurant.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,4 +15,8 @@ public class SubItem extends BaseModel {
     private int quantity;
     private String description;
     private String image;
+
+    @ManyToOne
+    @JsonBackReference
+    private Item item;
 }

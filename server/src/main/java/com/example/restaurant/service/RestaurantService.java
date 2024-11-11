@@ -1,18 +1,14 @@
 package com.example.restaurant.service;
 
-import com.example.restaurant.model.Item;
-import com.example.restaurant.model.Restaurent;
-import com.example.restaurant.model.SubItem;
+import com.example.restaurant.exception.RestaurentException;
+import com.example.restaurant.model.Restaurant;
 
 import java.util.List;
 
 public interface RestaurantService {
-  Restaurent createRestaurent(Restaurent restaurant);
-  Restaurent getRestaurent(int restaurentid);
-  List<Restaurent> getAllRestaurant();
-  Restaurent updateRestaurent(int restaurentid, Restaurent restaurant);
-  Restaurent deleteRestaurent(int restaurentid);
-
-
-
+  Restaurant createRestaurent(Restaurant restaurant) throws RestaurentException;
+  Restaurant getRestaurent(int restaurentid) throws RestaurentException;
+  List<Restaurant> getAllRestaurant();
+  Restaurant updateRestaurent(int restaurentid, Restaurant restaurant) throws RestaurentException;
+  Restaurant deleteRestaurent(int restaurentid) throws RestaurentException;
 }

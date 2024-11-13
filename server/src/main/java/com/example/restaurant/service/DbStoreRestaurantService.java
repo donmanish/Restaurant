@@ -1,15 +1,14 @@
 package com.example.restaurant.service;
 
 import com.example.restaurant.exception.RestaurentException;
+import com.example.restaurant.model.Menu;
 import com.example.restaurant.model.Restaurant;
-import com.example.restaurant.repositry.ItemRepositry;
-import com.example.restaurant.repositry.RestaurantRepositry;
-import com.example.restaurant.repositry.SubItemRepositry;
-import com.example.restaurant.repositry.UserRepositry;
+import com.example.restaurant.repositry.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service("DbStoreRestaurantService")
@@ -19,12 +18,14 @@ public class DbStoreRestaurantService implements RestaurantService{
     private final ItemRepositry itemRepositry;
     private final SubItemRepositry subItemRepositry;
     private final UserRepositry userRepositry;
+    private final MenuRepositry menuRepositry;
 
-    public DbStoreRestaurantService(RestaurantRepositry restaurantRepositry, ItemRepositry itemRepositry, SubItemRepositry subItemRepositry, UserRepositry userRepositry) {
+    public DbStoreRestaurantService(RestaurantRepositry restaurantRepositry, ItemRepositry itemRepositry, SubItemRepositry subItemRepositry, UserRepositry userRepositry, MenuRepositry menuRepositry) {
         this.restaurantRepositry = restaurantRepositry;
         this.itemRepositry = itemRepositry;
         this.subItemRepositry = subItemRepositry;
         this.userRepositry = userRepositry;
+        this.menuRepositry = menuRepositry;
     }
 
     @Override
@@ -48,7 +49,7 @@ public class DbStoreRestaurantService implements RestaurantService{
             restaurantRepositry.save(savedRestaurant);
             return savedRestaurant;
         } catch (RestaurentException e) {
-            throw new RestaurentException(e.getStatus(), "Failed to save restaurant details.");
+            throw new RestaurentException(e.getStatus(), e.getMessage());
         }
 
 

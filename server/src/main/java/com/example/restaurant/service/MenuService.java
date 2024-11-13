@@ -9,6 +9,7 @@ import java.util.List;
 
 public interface MenuService {
     Menu createMenu(Menu menu) throws MenuException;
+    Menu getAllMenuItemsFromRestaurantName(String email);
     List<Menu> getAllMenuItems();
 
     Item createItem(Item item) throws MenuException;

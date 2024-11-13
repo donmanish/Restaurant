@@ -17,8 +17,10 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Table extends BaseModel{
     private String Qrcode;
-    @ManyToOne
-    private User user;
+
     @Enumerated
     private TableStatus tableStatus;
+
+    @ManyToOne
+    private Restaurant restaurant;
 }

@@ -1,11 +1,12 @@
 package com.example.restaurant.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.ManyToOne;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Entity(name = "users")
@@ -17,8 +18,14 @@ public class User extends BaseModel{
     private String address;
     private String email;
     private String password;
-    @ManyToOne
-    private Menu menu;
+
+    @ManyToMany
+    @JoinTable(
+            name = "user_restaurant",
+            joinColumns = @JoinColumn(name = "user"),
+            inverseJoinColumns = @JoinColumn(name = "restaurant")
+    )
+    private List<Restaurant> restaurants = new ArrayList<>();
     @Enumerated
     private UserType userType;
 }

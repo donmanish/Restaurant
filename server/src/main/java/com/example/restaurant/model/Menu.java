@@ -16,7 +16,7 @@ public class Menu extends BaseModel{
     private Restaurant restaurant;
 
     @OneToMany(mappedBy = "menu" , fetch = FetchType.LAZY)
-    @JsonIgnoreProperties("item")
+    @JsonIgnoreProperties("items")
     private List<Item> item;
 
     @OneToMany

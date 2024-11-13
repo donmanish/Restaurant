@@ -29,16 +29,20 @@ public class MenuController {
     //create the items
     @PostMapping("/menu")
     public ResponseEntity<Menu> createMenu(@RequestBody Menu menu) {
-        Menu menus = menuService.createMenu(menu);
         MenuItemResponseDto responseDto = new MenuItemResponseDto();
-        if (menus == null) {
-            responseDto.setStatus(HttpStatus.BAD_REQUEST);
-            responseDto.setMessage("Invalid menu");
+        try {
+            Menu menus = menuService.createMenu(menu);
+            responseDto.setStatus(HttpStatus.OK);
+            responseDto.setMessage("Successfully created menu");
+            return new ResponseEntity<>(menus, responseDto.getStatus());
+        }catch (MenuException e)
+        {
+            responseDto.setStatus(e.getStatus());
+            responseDto.setMessage(e.getMessage());
             throw new MenuException(responseDto.getStatus(), responseDto.getMessage());
         }
-        responseDto.setStatus(HttpStatus.OK);
-        responseDto.setMessage("Successfully created menu");
-        return new ResponseEntity<>(menus, responseDto.getStatus());
+
+
     }
     //create the items
     @GetMapping("/menu")

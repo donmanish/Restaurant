@@ -10,4 +10,6 @@ import java.util.Optional;
 public interface MenuRepositry extends JpaRepository<Menu, Integer> {
 
     Optional<Menu> findByRestaurantEmail(String email);
+
+
 }

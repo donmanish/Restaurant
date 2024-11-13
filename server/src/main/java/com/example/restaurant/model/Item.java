@@ -25,4 +25,7 @@ public class Item extends BaseModel{
     @JsonBackReference
     private Menu menu;
 
+    @ManyToOne
+    private Order order;
+
 }

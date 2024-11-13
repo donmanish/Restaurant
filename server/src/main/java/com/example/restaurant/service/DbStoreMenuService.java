@@ -11,6 +11,7 @@ import com.example.restaurant.repositry.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -22,24 +23,41 @@ public class DbStoreMenuService implements MenuService{
     private final UserRepositry userRepositry;
     private final MenuRepositry menuRepositry;
     private final RestaurantRepositry restaurantRepositry;
+    private final RestaurantService restaurantService;
 
-    public DbStoreMenuService(ItemRepositry itemRepositry, SubItemRepositry subItemRepositry, UserRepositry userRepositry, MenuRepositry menuRepositry, RestaurantRepositry restaurantRepositry) {
+    public DbStoreMenuService(ItemRepositry itemRepositry, SubItemRepositry subItemRepositry, UserRepositry userRepositry, MenuRepositry menuRepositry, RestaurantRepositry restaurantRepositry, RestaurantService restaurantService) {
         this.itemRepositry = itemRepositry;
         this.subItemRepositry = subItemRepositry;
         this.userRepositry = userRepositry;
         this.menuRepositry = menuRepositry;
         this.restaurantRepositry = restaurantRepositry;
+        this.restaurantService = restaurantService;
     }
 
     @Override
     public Menu createMenu(Menu menu) throws MenuException {
         Menu savedMenu = new Menu();
-        savedMenu.setItem(menu.getItem());
+        //to many change of item so list of item
+        if(menu.getItem().size() == 0){
+            throw new MenuException(HttpStatus.BAD_REQUEST, "item not found");
+        }
+        List<Item> items = new ArrayList<>();
+        for(Item it : menu.getItem())
+        {
+            Optional<Item> optionalItem = itemRepositry.findByTitle(it.getTitle());
+            if (optionalItem.isPresent())
+            {
+                items.add(it);
+            } else{
+                throw new MenuException(HttpStatus.BAD_REQUEST, "Item not present");
+            }
+            optionalItem.get().setMenu(savedMenu);
+            items.add(optionalItem.get());
+        }
+
+        savedMenu.setItem(items);
         savedMenu.setUsers(menu.getUsers());
         try {
-            if (menu.getRestaurant() == null) {
-                throw new MenuException(HttpStatus.BAD_REQUEST, "Restaurant is not set in menu");
-            }
 
             Optional<Restaurant> optionalRestaurent = restaurantRepositry.findByEmail(menu.getRestaurant().getEmail());
             if (!optionalRestaurent.isPresent()) {
@@ -61,6 +79,23 @@ public class DbStoreMenuService implements MenuService{
     }
 
     @Override
+    public Menu getAllMenuItemsFromRestaurantName(String email)  throws MenuException {
+        Menu menus = new Menu();
+        Optional<Restaurant> optionalRestaurant = restaurantRepositry.findByEmail(email);
+        System.out.println(optionalRestaurant.isPresent());
+        if(!optionalRestaurant.isPresent()){
+            throw new MenuException(HttpStatus.NOT_FOUND, "Restaurant not found");
+        }
+        if(menus.getRestaurant() != optionalRestaurant.get())
+        {
+            throw new MenuException(HttpStatus.BAD_REQUEST, "Restaurant name does not match");
+        }else {
+            menus = optionalRestaurant.get().getMenu();
+        }
+        return menus;
+    }
+
+    @Override
     public List<Menu> getAllMenuItems() {
        List<Menu> menuList = menuRepositry.findAll();
        return  menuList;
@@ -72,16 +107,6 @@ public class DbStoreMenuService implements MenuService{
         Item savedItem = new Item();
         savedItem.setTitle(item.getTitle());
         savedItem.setItemType(item.getItemType());
-        try {
-            Optional<Menu> menuOptional = menuRepositry.findByRestaurantEmail(item.getMenu().getRestaurant().getEmail());
-            if (!menuOptional.isPresent()) {
-                throw new MenuException(HttpStatus.BAD_REQUEST, "Menu not found");
-            }
-            savedItem.setMenu(menuOptional.get());
-        }catch (MenuException e){
-            e.printStackTrace();
-            throw new MenuException(HttpStatus.BAD_REQUEST, "Menu not found");
-        }
         // Save the Item along with its associated SubItems
         itemRepositry.save(savedItem);
         return savedItem;
@@ -119,10 +144,7 @@ public class DbStoreMenuService implements MenuService{
         try {
             Optional<Item> Otionalitems = itemRepositry.findByTitle(subItem.getItem().getTitle());
             if(Otionalitems == null){
-                Item newItem = new Item();
-                newItem.setTitle(subItem.getItem().getTitle());
-                Item newRow = itemRepositry.save(newItem);
-                subItem.setItem(newRow);
+                   throw new MenuException(HttpStatus.BAD_REQUEST, "item not found");
             } else {
                 subItem.setItem(Otionalitems.get());
             }

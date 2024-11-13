@@ -1,8 +1,6 @@
 package com.example.restaurant.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,4 +13,7 @@ public class Payment extends BaseModel {
     private User user;
     @Enumerated
     private PaymentStatus paymentStatus;
+
+    @OneToOne
+    private Bill billing;
 }

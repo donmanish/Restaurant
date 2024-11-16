@@ -1,5 +1,88 @@
 .imageContain img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------grid item---------- */
+.itemgridcontainer .MuiGrid2-root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ----------layout setup------ */
+.layoutContainer {
+  margin: 0 auto;
+  max-width: 95%;
+}
+
+.selectContain label {
+  color: #fff;
+}
+
+.selectContain .css-113d811-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #ffffff;
+}
+
+.selectContain div#demo-simple-select {
+  color: #1e54ff;
+}
+
+.selectContain .css-1ll44ll-MuiOutlinedInput-notchedOutline {
+  border-color: rgb(255 255 255);
+}
+
+.selectContain
+  svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiSelect-icon.MuiSelect-iconOutlined.css-lohd6h-MuiSvgIcon-root-MuiSelect-icon {
+  color: #fff;
+  font-size: 43px;
+}
+
+.restaurant-contain .itemgridcontainer .MuiGrid2-root {
+  align-items: normal;
+}
+
+.content-container {
+  height: 100vh;
+}
+
+header.headerContainer {
+  margin-bottom: 53px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.rowbutton {
+  margin-top: 20px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.rowbutton button {
+  position: absolute;
+  top: 0;
+  width: 213px;
+  background-color: #0e60ff38;
+  padding: 18px;
+}
+
+.navlinks {
+  display: flex;
+  padding: 0;
+}
+.navlinks li {
+  list-style-type: none;
+}
+
+.navlinks li a {
+  color: #fff;
+}
+
+.navlinks li {
+  padding-left: 15px;
+}
+.navlinks li:first-child {
+  padding-left: 0;
 }

@@ -14,8 +14,6 @@ import java.util.List;
 @Setter
 public class Item extends BaseModel{
     private String title;
-    @Enumerated
-    private ItemType itemType;
 
     @OneToMany(mappedBy = "item" , fetch = FetchType.LAZY)
     @JsonIgnoreProperties("sub_item")

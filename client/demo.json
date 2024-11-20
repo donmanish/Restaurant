@@ -1,341 +1,932 @@
 {
-    "menu": [
+  "menu": [
+    {
+      "id": 1,
+      "created_at": "2024-11-19T21:01:52.899129",
+      "updated_at": "2024-11-19T21:01:52.899129",
+      "restaurant": {
+        "id": 1,
+        "created_at": "2024-11-18T20:07:34.388482",
+        "updated_at": "2024-11-18T20:07:34.388482",
+        "name": "La Bella Italia",
+        "address": "456 Italian St",
+        "phone": "111-222-3333",
+        "email": "contact@labellaitalia.com",
+        "description": "Authentic Italian cuisine",
+        "image": "labella.jpg",
+        "totalTables": 15,
+        "tables": [],
+        "restaurantStatus": null,
+        "users": []
+      },
+      "item": [
         {
-            "id": 102,
-            "created_at": "2024-11-14T01:04:52.846856",
-            "updated_at": "2024-11-14T01:04:52.847822",
-            "restaurant": {
-                "id": 1,
-                "created_at": "2024-11-14T00:02:11.440603",
-                "updated_at": "2024-11-14T00:02:11.440603",
-                "name": "La Bella Italia",
-                "address": "456 Italian St",
-                "phone": "111-222-3333",
-                "email": "contact@labellaitalia.com",
-                "description": "Authentic Italian cuisine",
-                "image": "labella.jpg",
-                "totalTables": 15,
-                "tables": [],
-                "restaurantStatus": null,
-                "users": []
+          "id": 1,
+          "created_at": "2024-11-18T20:08:55.888511",
+          "updated_at": "2024-11-19T21:01:52.900133",
+          "title": "Briyani",
+          "subItems": [
+            {
+              "id": 1,
+              "created_at": "2024-11-18T20:15:44.41666",
+              "updated_at": "2024-11-18T20:15:44.41666",
+              "name": "Mutton Briyani",
+              "price": 150,
+              "quantity": 1,
+              "description": "Extra ketchup packet",
+              "image": "ketchup.jpg",
+              "itemType": null
             },
-            "item": [
-                {
-                    "id": 1,
-                    "created_at": "2024-11-14T00:16:22.18244",
-                    "updated_at": "2024-11-14T01:04:52.86082",
-                    "title": "Margherita Pizza",
-                    "itemType": "NONVEG",
-                    "subItems": [
-                        {
-                            "id": 1,
-                            "created_at": "2024-11-14T00:19:06.367293",
-                            "updated_at": "2024-11-14T00:19:06.367293",
-                            "name": "Extra Mozzarella",
-                            "price": 50,
-                            "quantity": 1,
-                            "description": "Add more mozzarella cheese",
-                            "image": "mozzarella.jpg"
-                        }
-                    ],
-                    "order": null
-                },
-                {
-                    "id": 2,
-                    "created_at": "2024-11-14T00:16:52.283325",
-                    "updated_at": "2024-11-14T01:04:52.866819",
-                    "title": "Pasta Carbonara",
-                    "itemType": "VEG",
-                    "subItems": [
-                        {
-                            "id": 2,
-                            "created_at": "2024-11-14T00:21:21.359369",
-                            "updated_at": "2024-11-14T00:21:21.359369",
-                            "name": "Garlic Bread",
-                            "price": 40,
-                            "quantity": 1,
-                            "description": "Served with garlic butter",
-                            "image": "garlic_bread.jpg"
-                        }
-                    ],
-                    "order": null
-                }
-            ],
-            "users": []
+            {
+              "id": 2,
+              "created_at": "2024-11-18T20:16:47.534834",
+              "updated_at": "2024-11-18T20:16:47.534834",
+              "name": "Chicken Briyani",
+              "price": 120,
+              "quantity": 1,
+              "description": "chicken is best",
+              "image": "ketchup.jpg",
+              "itemType": null
+            },
+            {
+              "id": 3,
+              "created_at": "2024-11-18T20:17:12.915054",
+              "updated_at": "2024-11-18T20:17:12.915054",
+              "name": "Egg Briyani",
+              "price": 100,
+              "quantity": 1,
+              "description": "Egg is best",
+              "image": "Egg.jpg",
+              "itemType": null
+            },
+            {
+              "id": 4,
+              "created_at": "2024-11-18T20:17:39.609351",
+              "updated_at": "2024-11-18T20:17:39.609351",
+              "name": "Fish Briyani",
+              "price": 170,
+              "quantity": 1,
+              "description": "Fish is best",
+              "image": "Fish.jpg",
+              "itemType": null
+            },
+            {
+              "id": 5,
+              "created_at": "2024-11-18T20:18:15.254904",
+              "updated_at": "2024-11-18T20:18:15.254904",
+              "name": "Paneer Briyani",
+              "price": 110,
+              "quantity": 1,
+              "description": "Paneer is best",
+              "image": "Paneer.jpg",
+              "itemType": null
+            }
+          ],
+          "order": null
         },
         {
-            "id": 152,
-            "created_at": "2024-11-14T01:29:31.592534",
-            "updated_at": "2024-11-14T01:29:31.592534",
-            "restaurant": {
-                "id": 2,
-                "created_at": "2024-11-14T01:17:38.816487",
-                "updated_at": "2024-11-14T01:17:38.816487",
-                "name": "Casa Mexicana",
-                "address": "789 Fiesta Ave",
-                "phone": "222-333-4444",
-                "email": "info@casamexicana.com",
-                "description": "Traditional Mexican flavors",
-                "image": "casamexicana.jpg",
-                "totalTables": 12,
-                "tables": [],
-                "restaurantStatus": null,
-                "users": []
+          "id": 2,
+          "created_at": "2024-11-18T20:09:10.847516",
+          "updated_at": "2024-11-19T21:01:52.913449",
+          "title": "Pizza",
+          "subItems": [
+            {
+              "id": 6,
+              "created_at": "2024-11-18T20:19:54.133807",
+              "updated_at": "2024-11-18T20:19:54.133807",
+              "name": "Margherita",
+              "price": 200,
+              "quantity": 1,
+              "description": "Margherita pizza is best",
+              "image": "Margherita.jpg",
+              "itemType": null
             },
-            "item": [
-                {
-                    "id": 52,
-                    "created_at": "2024-11-14T01:19:27.964404",
-                    "updated_at": "2024-11-14T01:29:31.593497",
-                    "title": "Tacos",
-                    "itemType": "VEG",
-                    "subItems": [
-                        {
-                            "id": 52,
-                            "created_at": "2024-11-14T01:23:45.50803",
-                            "updated_at": "2024-11-14T01:23:45.50803",
-                            "name": "Guacamole",
-                            "price": 30,
-                            "quantity": 1,
-                            "description": "Freshly made guacamole",
-                            "image": "guacamole.jpg"
-                        },
-                        {
-                            "id": 53,
-                            "created_at": "2024-11-14T01:24:21.810381",
-                            "updated_at": "2024-11-14T01:24:21.810381",
-                            "name": "Sour Cream",
-                            "price": 20,
-                            "quantity": 1,
-                            "description": "Creamy and tangy",
-                            "image": "sour_cream.jpg"
-                        }
-                    ],
-                    "order": null
-                },
-                {
-                    "id": 53,
-                    "created_at": "2024-11-14T01:20:03.516644",
-                    "updated_at": "2024-11-14T01:29:31.601537",
-                    "title": "Quesadilla",
-                    "itemType": "NONVEG",
-                    "subItems": [
-                        {
-                            "id": 54,
-                            "created_at": "2024-11-14T01:25:04.949224",
-                            "updated_at": "2024-11-14T01:25:04.949224",
-                            "name": "Pico de Gallo",
-                            "price": 25,
-                            "quantity": 1,
-                            "description": "Fresh tomato salsa",
-                            "image": "pico.jpg"
-                        }
-                    ],
-                    "order": null
-                }
-            ],
-            "users": []
+            {
+              "id": 7,
+              "created_at": "2024-11-18T20:21:12.878787",
+              "updated_at": "2024-11-18T20:21:12.878787",
+              "name": "Pepperoni",
+              "price": 250,
+              "quantity": 1,
+              "description": "Pepperoni pizza is best",
+              "image": "Pepperoni.jpg",
+              "itemType": null
+            },
+            {
+              "id": 8,
+              "created_at": "2024-11-18T20:21:40.631765",
+              "updated_at": "2024-11-18T20:21:40.631765",
+              "name": "BBQ Chicken",
+              "price": 280,
+              "quantity": 1,
+              "description": "BBQ Chicken pizza is best",
+              "image": "BBQChicken.jpg",
+              "itemType": null
+            },
+            {
+              "id": 9,
+              "created_at": "2024-11-18T20:22:29.980178",
+              "updated_at": "2024-11-18T20:22:29.980178",
+              "name": "Vegetable Supreme",
+              "price": 220,
+              "quantity": 1,
+              "description": "Vegetable Supreme pizza is best",
+              "image": "VegetableSupreme.jpg",
+              "itemType": null
+            },
+            {
+              "id": 10,
+              "created_at": "2024-11-18T20:23:06.947999",
+              "updated_at": "2024-11-18T20:23:06.947999",
+              "name": "Hawaiian",
+              "price": 260,
+              "quantity": 1,
+              "description": "Hawaiian pizza is best",
+              "image": "Hawaiian.jpg",
+              "itemType": null
+            },
+            {
+              "id": 11,
+              "created_at": "2024-11-18T20:23:32.855015",
+              "updated_at": "2024-11-18T20:23:32.855015",
+              "name": "Four Cheese",
+              "price": 260,
+              "quantity": 1,
+              "description": "Four Cheese pizza is best",
+              "image": "FourCheese.jpg",
+              "itemType": null
+            }
+          ],
+          "order": null
         },
         {
-            "id": 153,
-            "created_at": "2024-11-14T01:31:48.051454",
-            "updated_at": "2024-11-14T01:31:48.051454",
-            "restaurant": {
-                "id": 3,
-                "created_at": "2024-11-14T01:17:55.464838",
-                "updated_at": "2024-11-14T01:17:55.464838",
-                "name": "Sakura Sushi",
-                "address": "101 Tokyo Ln",
-                "phone": "333-444-5555",
-                "email": "hello@sakurasushi.com",
-                "description": "Exquisite Japanese dining",
-                "image": "sakura.jpg",
-                "totalTables": 20,
-                "tables": [],
-                "restaurantStatus": null,
-                "users": []
+          "id": 3,
+          "created_at": "2024-11-18T20:09:21.335584",
+          "updated_at": "2024-11-19T21:01:52.914414",
+          "title": "Pasta",
+          "subItems": [
+            {
+              "id": 12,
+              "created_at": "2024-11-18T20:24:46.629987",
+              "updated_at": "2024-11-18T20:24:46.629987",
+              "name": "Spaghetti Aglio e Olio",
+              "price": 180,
+              "quantity": 1,
+              "description": "Spaghetti Aglio e Olio pasta is best",
+              "image": "Spaghetti.jpg",
+              "itemType": null
             },
-            "item": [
-                {
-                    "id": 54,
-                    "created_at": "2024-11-14T01:20:32.628589",
-                    "updated_at": "2024-11-14T01:31:48.053455",
-                    "title": "Sushi Platter",
-                    "itemType": "VEG",
-                    "subItems": [
-                        {
-                            "id": 55,
-                            "created_at": "2024-11-14T01:25:32.571319",
-                            "updated_at": "2024-11-14T01:25:32.571319",
-                            "name": "Extra Wasabi",
-                            "price": 10,
-                            "quantity": 1,
-                            "description": "Add more wasabi",
-                            "image": "wasabi.jpg"
-                        }
-                    ],
-                    "order": null
-                },
-                {
-                    "id": 55,
-                    "created_at": "2024-11-14T01:21:09.34613",
-                    "updated_at": "2024-11-14T01:31:48.057457",
-                    "title": "Ramen",
-                    "itemType": "NONVEG",
-                    "subItems": [
-                        {
-                            "id": 56,
-                            "created_at": "2024-11-14T01:26:01.595647",
-                            "updated_at": "2024-11-14T01:26:01.595647",
-                            "name": "Soft-Boiled Egg",
-                            "price": 15,
-                            "quantity": 1,
-                            "description": "Additional egg for ramen",
-                            "image": "egg.jpg"
-                        }
-                    ],
-                    "order": null
-                }
-            ],
-            "users": []
-        },
-        {
-            "id": 154,
-            "created_at": "2024-11-14T01:34:06.544135",
-            "updated_at": "2024-11-14T01:34:06.544135",
-            "restaurant": {
-                "id": 4,
-                "created_at": "2024-11-14T01:18:13.568845",
-                "updated_at": "2024-11-14T01:18:13.568845",
-                "name": "Spice of India",
-                "address": "202 Curry Blvd",
-                "phone": "444-555-6666",
-                "email": "contact@spiceofindia.com",
-                "description": "Authentic Indian flavors",
-                "image": "spiceofindia.jpg",
-                "totalTables": 18,
-                "tables": [],
-                "restaurantStatus": null,
-                "users": []
+            {
+              "id": 13,
+              "created_at": "2024-11-18T20:25:34.874207",
+              "updated_at": "2024-11-18T20:25:34.874207",
+              "name": "Penne Arrabbiata",
+              "price": 200,
+              "quantity": 1,
+              "description": "Penne Arrabbiata pasta is best",
+              "image": "Penne.jpg",
+              "itemType": null
             },
-            "item": [
-                {
-                    "id": 56,
-                    "created_at": "2024-11-14T01:21:33.235084",
-                    "updated_at": "2024-11-14T01:34:06.546134",
-                    "title": "Butter Chicken",
-                    "itemType": "VEG",
-                    "subItems": [
-                        {
-                            "id": 57,
-                            "created_at": "2024-11-14T01:26:37.77517",
-                            "updated_at": "2024-11-14T01:26:37.77517",
-                            "name": "Naan",
-                            "price": 20,
-                            "quantity": 1,
-                            "description": "Indian flatbread",
-                            "image": "naan.jpg"
-                        }
-                    ],
-                    "order": null
-                },
-                {
-                    "id": 57,
-                    "created_at": "2024-11-14T01:21:52.008294",
-                    "updated_at": "2024-11-14T01:34:06.552142",
-                    "title": "Chole Bhature",
-                    "itemType": "NONVEG",
-                    "subItems": [
-                        {
-                            "id": 58,
-                            "created_at": "2024-11-14T01:27:10.795207",
-                            "updated_at": "2024-11-14T01:27:10.795207",
-                            "name": "Extra Bhature",
-                            "price": 15,
-                            "quantity": 1,
-                            "description": "Fried fluffy bread",
-                            "image": "bhature.jpg"
-                        }
-                    ],
-                    "order": null
-                }
-            ],
-            "users": []
-        },
-        {
-            "id": 155,
-            "created_at": "2024-11-14T01:35:45.210701",
-            "updated_at": "2024-11-14T01:35:45.210701",
-            "restaurant": {
-                "id": 5,
-                "created_at": "2024-11-14T01:18:40.42876",
-                "updated_at": "2024-11-14T01:18:40.42876",
-                "name": "Route 66 Diner",
-                "address": "303 Americana Dr",
-                "phone": "555-666-7777",
-                "email": "contact@route66diner.com",
-                "description": "Classic American Diner",
-                "image": "route66.jpg",
-                "totalTables": 25,
-                "tables": [],
-                "restaurantStatus": null,
-                "users": []
+            {
+              "id": 14,
+              "created_at": "2024-11-18T20:26:37.997974",
+              "updated_at": "2024-11-18T20:26:37.997974",
+              "name": "Chicken Alfredo",
+              "price": 160,
+              "quantity": 1,
+              "description": "Chicken Alfredo pasta is best",
+              "image": "ChickenAlfredo.jpg",
+              "itemType": null
             },
-            "item": [
-                {
-                    "id": 58,
-                    "created_at": "2024-11-14T01:22:18.990093",
-                    "updated_at": "2024-11-14T01:35:45.211699",
-                    "title": "Burger",
-                    "itemType": "VEG",
-                    "subItems": [
-                        {
-                            "id": 59,
-                            "created_at": "2024-11-14T01:27:45.042655",
-                            "updated_at": "2024-11-14T01:27:45.042655",
-                            "name": "Cheese Slice",
-                            "price": 10,
-                            "quantity": 1,
-                            "description": "Extra cheese slice",
-                            "image": "cheese.jpg"
-                        },
-                        {
-                            "id": 60,
-                            "created_at": "2024-11-14T01:27:58.005884",
-                            "updated_at": "2024-11-14T01:27:58.005884",
-                            "name": "Bacon",
-                            "price": 20,
-                            "quantity": 1,
-                            "description": "Add bacon",
-                            "image": "bacon.jpg"
-                        }
-                    ],
-                    "order": null
-                },
-                {
-                    "id": 59,
-                    "created_at": "2024-11-14T01:22:46.650548",
-                    "updated_at": "2024-11-14T01:35:45.214701",
-                    "title": "Fries",
-                    "itemType": "NONVEG",
-                    "subItems": [
-                        {
-                            "id": 61,
-                            "created_at": "2024-11-14T01:28:20.884016",
-                            "updated_at": "2024-11-14T01:28:20.884016",
-                            "name": "Ketchup",
-                            "price": 5,
-                            "quantity": 1,
-                            "description": "Extra ketchup packet",
-                            "image": "ketchup.jpg"
-                        }
-                    ],
-                    "order": null
-                }
-            ],
-            "users": []
+            {
+              "id": 15,
+              "created_at": "2024-11-18T20:27:30.234214",
+              "updated_at": "2024-11-18T20:27:30.234214",
+              "name": "Carbonara",
+              "price": 190,
+              "quantity": 1,
+              "description": "Carbonarapasta is best",
+              "image": "ChickenAlfredo.jpg",
+              "itemType": null
+            },
+            {
+              "id": 16,
+              "created_at": "2024-11-18T20:28:22.038626",
+              "updated_at": "2024-11-18T20:28:22.038626",
+              "name": "Lasagna",
+              "price": 260,
+              "quantity": 1,
+              "description": "Lasagna pasta is best",
+              "image": "Lasagna.jpg",
+              "itemType": null
+            },
+            {
+              "id": 17,
+              "created_at": "2024-11-18T20:28:45.262043",
+              "updated_at": "2024-11-18T20:28:45.262043",
+              "name": "Veggie Lasagna",
+              "price": 240,
+              "quantity": 1,
+              "description": "Veggie Lasagna pasta is best",
+              "image": "VeggieLasagna.jpg",
+              "itemType": null
+            }
+          ],
+          "order": null
         }
-    ],
-    "status": "OK",
-    "message": "All items found."
+      ],
+      "users": []
+    },
+    {
+      "id": 2,
+      "created_at": "2024-11-19T21:03:40.311705",
+      "updated_at": "2024-11-19T21:03:40.311705",
+      "restaurant": {
+        "id": 2,
+        "created_at": "2024-11-18T20:07:56.219396",
+        "updated_at": "2024-11-18T20:07:56.219396",
+        "name": "Spicy Delights",
+        "address": "789 Spicy Rd",
+        "phone": "444-555-6666",
+        "email": "info@spicydelights.com",
+        "description": "Hot and spicy dishes",
+        "image": "spicydelights.jpg",
+        "totalTables": 20,
+        "tables": [],
+        "restaurantStatus": null,
+        "users": []
+      },
+      "item": [
+        {
+          "id": 4,
+          "created_at": "2024-11-18T20:09:35.101682",
+          "updated_at": "2024-11-19T21:03:40.313674",
+          "title": "Tacos",
+          "subItems": [
+            {
+              "id": 18,
+              "created_at": "2024-11-18T20:29:41.051662",
+              "updated_at": "2024-11-18T20:29:41.051662",
+              "name": "Chicken Taco",
+              "price": 80,
+              "quantity": 1,
+              "description": "Chicken Taco is best",
+              "image": "ChickenTaco.jpg",
+              "itemType": null
+            },
+            {
+              "id": 19,
+              "created_at": "2024-11-18T20:30:02.479757",
+              "updated_at": "2024-11-18T20:30:02.479757",
+              "name": "Fish Taco",
+              "price": 80,
+              "quantity": 1,
+              "description": "Fish Tacois best",
+              "image": "FishTaco.jpg",
+              "itemType": null
+            },
+            {
+              "id": 20,
+              "created_at": "2024-11-18T20:30:29.246157",
+              "updated_at": "2024-11-18T20:30:29.246157",
+              "name": "Vegetarian Taco",
+              "price": 70,
+              "quantity": 1,
+              "description": "Vegetarian Taco is best",
+              "image": "FishTaco.jpg",
+              "itemType": null
+            },
+            {
+              "id": 21,
+              "created_at": "2024-11-18T20:30:55.463044",
+              "updated_at": "2024-11-18T20:30:55.463044",
+              "name": "Pork Taco",
+              "price": 110,
+              "quantity": 1,
+              "description": "Pork Taco is best",
+              "image": "FishTaco.jpg",
+              "itemType": null
+            },
+            {
+              "id": 22,
+              "created_at": "2024-11-18T20:31:17.803348",
+              "updated_at": "2024-11-18T20:31:17.803348",
+              "name": "Shrimp Taco",
+              "price": 120,
+              "quantity": 1,
+              "description": "Shrimp Taco is best",
+              "image": "FishTaco.jpg",
+              "itemType": null
+            }
+          ],
+          "order": null
+        },
+        {
+          "id": 5,
+          "created_at": "2024-11-18T20:09:51.810703",
+          "updated_at": "2024-11-19T21:03:40.314671",
+          "title": "Burgers",
+          "subItems": [
+            {
+              "id": 23,
+              "created_at": "2024-11-18T20:31:59.147918",
+              "updated_at": "2024-11-18T20:31:59.147918",
+              "name": "Cheese Burger",
+              "price": 150,
+              "quantity": 1,
+              "description": "Cheese Burgeris best",
+              "image": "CheeseBurger.jpg",
+              "itemType": null
+            },
+            {
+              "id": 24,
+              "created_at": "2024-11-18T20:32:30.750873",
+              "updated_at": "2024-11-18T20:32:30.750873",
+              "name": "Chicken Burger",
+              "price": 140,
+              "quantity": 1,
+              "description": "Chicken Burger is best",
+              "image": "ChickenBurger.jpg",
+              "itemType": null
+            },
+            {
+              "id": 25,
+              "created_at": "2024-11-18T20:33:05.782044",
+              "updated_at": "2024-11-18T20:33:05.782044",
+              "name": "Veggie Burger",
+              "price": 120,
+              "quantity": 1,
+              "description": "Veggie Burger is best",
+              "image": "VeggieBurger.jpg",
+              "itemType": null
+            },
+            {
+              "id": 26,
+              "created_at": "2024-11-18T20:33:38.04897",
+              "updated_at": "2024-11-18T20:33:38.04897",
+              "name": "Fish Burger",
+              "price": 160,
+              "quantity": 1,
+              "description": "Fish Burger is best",
+              "image": "FishBurger.jpg",
+              "itemType": null
+            },
+            {
+              "id": 27,
+              "created_at": "2024-11-18T20:34:28.621818",
+              "updated_at": "2024-11-18T20:34:28.621818",
+              "name": "BBQ Chicken Burger",
+              "price": 180,
+              "quantity": 1,
+              "description": "BBQ Chicken Burger is best",
+              "image": "BBQChickenBurger.jpg",
+              "itemType": null
+            }
+          ],
+          "order": null
+        },
+        {
+          "id": 6,
+          "created_at": "2024-11-18T20:10:10.838782",
+          "updated_at": "2024-11-19T21:03:40.315668",
+          "title": "Fried Rice",
+          "subItems": [
+            {
+              "id": 28,
+              "created_at": "2024-11-18T20:35:43.660517",
+              "updated_at": "2024-11-18T20:35:43.660517",
+              "name": "Chicken Fried Rice",
+              "price": 130,
+              "quantity": 1,
+              "description": "Chicken Fried Rice is best",
+              "image": "ChickenFriedRice.jpg",
+              "itemType": null
+            },
+            {
+              "id": 29,
+              "created_at": "2024-11-18T20:36:17.945059",
+              "updated_at": "2024-11-18T20:36:17.945059",
+              "name": "Vegetable Fried Rice",
+              "price": 110,
+              "quantity": 1,
+              "description": "Vegetable Fried Rice is best",
+              "image": "VegetableFriedRice.jpg",
+              "itemType": null
+            },
+            {
+              "id": 30,
+              "created_at": "2024-11-18T20:36:45.927471",
+              "updated_at": "2024-11-18T20:36:45.927471",
+              "name": "Shrimp Fried Rice",
+              "price": 140,
+              "quantity": 1,
+              "description": "Shrimp Fried Rice is best",
+              "image": "ShrimpFriedRice.jpg",
+              "itemType": null
+            },
+            {
+              "id": 31,
+              "created_at": "2024-11-18T20:37:21.149527",
+              "updated_at": "2024-11-18T20:37:21.149527",
+              "name": "Egg Fried Rice",
+              "price": 120,
+              "quantity": 1,
+              "description": "Egg Fried Rice is best",
+              "image": "EggFriedRice.jpg",
+              "itemType": null
+            }
+          ],
+          "order": null
+        }
+      ],
+      "users": []
+    },
+    {
+      "id": 3,
+      "created_at": "2024-11-19T21:04:58.751856",
+      "updated_at": "2024-11-19T21:04:58.751856",
+      "restaurant": {
+        "id": 3,
+        "created_at": "2024-11-18T20:08:14.742402",
+        "updated_at": "2024-11-18T20:08:14.742402",
+        "name": "Sushi World",
+        "address": "123 Sushi Blvd",
+        "phone": "333-444-5555",
+        "email": "contact@sushiworld.com",
+        "description": "Fresh and authentic sushi",
+        "image": "sushiworld.jpg",
+        "totalTables": 25,
+        "tables": [],
+        "restaurantStatus": null,
+        "users": []
+      },
+      "item": [
+        {
+          "id": 7,
+          "created_at": "2024-11-18T20:10:27.186093",
+          "updated_at": "2024-11-19T21:04:58.752855",
+          "title": "Sushi Rolls",
+          "subItems": [
+            {
+              "id": 32,
+              "created_at": "2024-11-18T20:38:11.223514",
+              "updated_at": "2024-11-18T20:38:11.223514",
+              "name": "California Roll",
+              "price": 220,
+              "quantity": 1,
+              "description": "California Roll is best",
+              "image": "CaliforniaRoll.jpg",
+              "itemType": null
+            },
+            {
+              "id": 33,
+              "created_at": "2024-11-18T20:38:42.316976",
+              "updated_at": "2024-11-18T20:38:42.316976",
+              "name": "Dragon Roll",
+              "price": 250,
+              "quantity": 1,
+              "description": "Dragon Roll is best",
+              "image": "CaliforniaRoll.jpg",
+              "itemType": null
+            },
+            {
+              "id": 34,
+              "created_at": "2024-11-18T20:39:04.228866",
+              "updated_at": "2024-11-18T20:39:04.228866",
+              "name": "Tuna Roll",
+              "price": 250,
+              "quantity": 1,
+              "description": "Tuna Roll is best",
+              "image": "TunaRoll.jpg",
+              "itemType": null
+            },
+            {
+              "id": 35,
+              "created_at": "2024-11-18T20:39:22.368686",
+              "updated_at": "2024-11-18T20:39:22.368686",
+              "name": "Veggie Roll",
+              "price": 250,
+              "quantity": 1,
+              "description": "Veggie Roll is best",
+              "image": "VeggieRoll.jpg",
+              "itemType": null
+            },
+            {
+              "id": 36,
+              "created_at": "2024-11-18T20:39:43.221511",
+              "updated_at": "2024-11-18T20:39:43.221511",
+              "name": "Salmon Roll",
+              "price": 250,
+              "quantity": 1,
+              "description": "Salmon Roll is best",
+              "image": "SalmonRoll.jpg",
+              "itemType": null
+            },
+            {
+              "id": 37,
+              "created_at": "2024-11-18T20:40:03.072963",
+              "updated_at": "2024-11-18T20:40:03.072963",
+              "name": "Tempura Roll",
+              "price": 250,
+              "quantity": 1,
+              "description": "Tempura Roll is best",
+              "image": "TempuraRoll.jpg",
+              "itemType": null
+            }
+          ],
+          "order": null
+        },
+        {
+          "id": 8,
+          "created_at": "2024-11-18T20:10:38.882361",
+          "updated_at": "2024-11-19T21:04:58.753821",
+          "title": "Sashimi",
+          "subItems": [
+            {
+              "id": 38,
+              "created_at": "2024-11-18T20:40:52.890115",
+              "updated_at": "2024-11-18T20:40:52.890115",
+              "name": "Salmon Sashimi",
+              "price": 350,
+              "quantity": 1,
+              "description": "Salmon Sashimi is best",
+              "image": "SalmonSashimi.jpg",
+              "itemType": null
+            },
+            {
+              "id": 39,
+              "created_at": "2024-11-18T20:41:39.625049",
+              "updated_at": "2024-11-18T20:41:39.625049",
+              "name": "Tuna Sashimi",
+              "price": 380,
+              "quantity": 1,
+              "description": "Tuna Sashimi is best",
+              "image": "TunaSashimi.jpg",
+              "itemType": null
+            },
+            {
+              "id": 40,
+              "created_at": "2024-11-18T20:42:06.877059",
+              "updated_at": "2024-11-18T20:42:06.877059",
+              "name": "Yellowtail Sashimi",
+              "price": 400,
+              "quantity": 1,
+              "description": "Yellowtail Sashimi is best",
+              "image": "YellowtailSashimi.jpg",
+              "itemType": null
+            },
+            {
+              "id": 41,
+              "created_at": "2024-11-18T20:42:33.269578",
+              "updated_at": "2024-11-18T20:42:33.269578",
+              "name": "Mackerel Sashimi",
+              "price": 400,
+              "quantity": 1,
+              "description": "Mackerel Sashimi is best",
+              "image": "MackerelSashimi.jpg",
+              "itemType": null
+            },
+            {
+              "id": 42,
+              "created_at": "2024-11-18T20:43:03.699829",
+              "updated_at": "2024-11-18T20:43:03.700797",
+              "name": "Scallop Sashimi",
+              "price": 430,
+              "quantity": 1,
+              "description": "Scallop Sashimi is best",
+              "image": "ScallopSashimi.jpg",
+              "itemType": null
+            }
+          ],
+          "order": null
+        },
+        {
+          "id": 9,
+          "created_at": "2024-11-18T20:10:47.902075",
+          "updated_at": "2024-11-19T21:04:58.754767",
+          "title": "Tempura",
+          "subItems": [
+            {
+              "id": 52,
+              "created_at": "2024-11-19T20:41:13.989429",
+              "updated_at": "2024-11-19T20:41:13.990429",
+              "name": "Shrimp Tempura",
+              "price": 220,
+              "quantity": 1,
+              "description": "Shrimp Tempurais best",
+              "image": "ShrimpTempura.jpg",
+              "itemType": null
+            },
+            {
+              "id": 53,
+              "created_at": "2024-11-19T20:41:49.980442",
+              "updated_at": "2024-11-19T20:41:49.980442",
+              "name": "Veg Tempura",
+              "price": 190,
+              "quantity": 1,
+              "description": "Veg Tempura best",
+              "image": "ShrimpTempura.jpg",
+              "itemType": null
+            },
+            {
+              "id": 54,
+              "created_at": "2024-11-19T20:42:43.838992",
+              "updated_at": "2024-11-19T20:42:43.838992",
+              "name": "Mixed Tempura",
+              "price": 250,
+              "quantity": 1,
+              "description": "Mixed Tempura best",
+              "image": "MixedTempura.jpg",
+              "itemType": null
+            },
+            {
+              "id": 55,
+              "created_at": "2024-11-19T20:43:11.786484",
+              "updated_at": "2024-11-19T20:43:11.786484",
+              "name": "Squid Tempura",
+              "price": 270,
+              "quantity": 1,
+              "description": "Squid Tempura best",
+              "image": "SquidTempura.jpg",
+              "itemType": null
+            },
+            {
+              "id": 56,
+              "created_at": "2024-11-19T20:43:38.603295",
+              "updated_at": "2024-11-19T20:43:38.603295",
+              "name": "Sweet Potato Tempura",
+              "price": 200,
+              "quantity": 1,
+              "description": "Sweet Potato Tempura best",
+              "image": "SquidTempura.jpg",
+              "itemType": null
+            },
+            {
+              "id": 57,
+              "created_at": "2024-11-19T20:44:13.770415",
+              "updated_at": "2024-11-19T20:44:13.770415",
+              "name": "Tempura Udon",
+              "price": 300,
+              "quantity": 1,
+              "description": "Tempura Udon Tempura best",
+              "image": "TempuraUdon.jpg",
+              "itemType": null
+            }
+          ],
+          "order": null
+        }
+      ],
+      "users": []
+    },
+    {
+      "id": 4,
+      "created_at": "2024-11-19T21:06:36.774376",
+      "updated_at": "2024-11-19T21:06:36.774376",
+      "restaurant": {
+        "id": 4,
+        "created_at": "2024-11-18T20:08:30.981562",
+        "updated_at": "2024-11-18T20:08:30.981562",
+        "name": "Grill Master",
+        "address": "678 BBQ Lane",
+        "phone": "555-666-7777",
+        "email": "contact@grillmaster.com",
+        "description": "Grilled to perfection",
+        "image": "grillmaster.jpg",
+        "totalTables": 30,
+        "tables": [],
+        "restaurantStatus": null,
+        "users": []
+      },
+      "item": [
+        {
+          "id": 10,
+          "created_at": "2024-11-18T20:10:57.895208",
+          "updated_at": "2024-11-19T21:06:36.775356",
+          "title": "Steaks",
+          "subItems": [
+            {
+              "id": 58,
+              "created_at": "2024-11-19T20:45:16.627744",
+              "updated_at": "2024-11-19T20:45:16.627744",
+              "name": "Ribeye Steak",
+              "price": 450,
+              "quantity": 1,
+              "description": "Ribeye Steak Tempura best",
+              "image": "TempuraUdon.jpg",
+              "itemType": null
+            },
+            {
+              "id": 59,
+              "created_at": "2024-11-19T20:45:50.807097",
+              "updated_at": "2024-11-19T20:45:50.807097",
+              "name": "T-Bone Steak",
+              "price": 500,
+              "quantity": 1,
+              "description": "T-Bone Steak Tempura best",
+              "image": "T-BoneSteak.jpg",
+              "itemType": null
+            },
+            {
+              "id": 60,
+              "created_at": "2024-11-19T20:46:49.615014",
+              "updated_at": "2024-11-19T20:46:49.615014",
+              "name": "Filet Mignon",
+              "price": 500,
+              "quantity": 1,
+              "description": "Filet Mignon best",
+              "image": "FiletMignon.jpg",
+              "itemType": null
+            },
+            {
+              "id": 61,
+              "created_at": "2024-11-19T20:47:21.479015",
+              "updated_at": "2024-11-19T20:47:21.479015",
+              "name": "Porterhouse Steak",
+              "price": 550,
+              "quantity": 1,
+              "description": "Porterhouse Steakbest",
+              "image": "PorterhouseSteak.jpg",
+              "itemType": null
+            },
+            {
+              "id": 62,
+              "created_at": "2024-11-19T20:47:54.750939",
+              "updated_at": "2024-11-19T20:47:54.750939",
+              "name": "Sirloin Steak",
+              "price": 400,
+              "quantity": 1,
+              "description": "Sirloin  Steak best",
+              "image": "SirloinSteak.jpg",
+              "itemType": null
+            },
+            {
+              "id": 63,
+              "created_at": "2024-11-19T20:48:29.216019",
+              "updated_at": "2024-11-19T20:48:29.216019",
+              "name": "New York Strip",
+              "price": 500,
+              "quantity": 1,
+              "description": "New York Strip best",
+              "image": "NewYorkStrip.jpg",
+              "itemType": null
+            }
+          ],
+          "order": null
+        },
+        {
+          "id": 11,
+          "created_at": "2024-11-18T20:11:09.431373",
+          "updated_at": "2024-11-19T21:06:36.77635",
+          "title": "Grilled Chicken",
+          "subItems": [
+            {
+              "id": 64,
+              "created_at": "2024-11-19T20:49:15.668365",
+              "updated_at": "2024-11-19T20:49:15.668365",
+              "name": "Lemon Herb Chicken",
+              "price": 220,
+              "quantity": 1,
+              "description": "Lemon Herb Chicken best",
+              "image": "LemonHerbChicken.jpg",
+              "itemType": null
+            },
+            {
+              "id": 65,
+              "created_at": "2024-11-19T20:49:51.448747",
+              "updated_at": "2024-11-19T20:49:51.448747",
+              "name": "BBQ Grilled Chicken",
+              "price": 240,
+              "quantity": 1,
+              "description": "BBQ Grilled Chickenbest",
+              "image": "BBQGrilledChicken.jpg",
+              "itemType": null
+            },
+            {
+              "id": 66,
+              "created_at": "2024-11-19T20:50:31.312981",
+              "updated_at": "2024-11-19T20:50:31.312981",
+              "name": "Garlic Butter Chicken",
+              "price": 230,
+              "quantity": 1,
+              "description": "Garlic Butter Chicken best",
+              "image": "GarlicButterChicken.jpg",
+              "itemType": null
+            },
+            {
+              "id": 67,
+              "created_at": "2024-11-19T20:51:02.482446",
+              "updated_at": "2024-11-19T20:51:02.482446",
+              "name": "Spicy Grilled Chicken",
+              "price": 250,
+              "quantity": 1,
+              "description": "Spicy Grilled Chicken best",
+              "image": "SpicyGrilledChicken.jpg",
+              "itemType": null
+            },
+            {
+              "id": 68,
+              "created_at": "2024-11-19T20:51:28.140202",
+              "updated_at": "2024-11-19T20:51:28.140202",
+              "name": "Cajun Grilled Chicken",
+              "price": 260,
+              "quantity": 1,
+              "description": "Cajun Grilled Chicken best",
+              "image": "CajunGrilledChicken.jpg",
+              "itemType": null
+            },
+            {
+              "id": 69,
+              "created_at": "2024-11-19T20:52:08.932808",
+              "updated_at": "2024-11-19T20:52:08.932808",
+              "name": "Balsamic Grilled Chicken",
+              "price": 270,
+              "quantity": 1,
+              "description": "Balsamic Grilled Chicken best",
+              "image": "BalsamicGrilledChicken.jpg",
+              "itemType": null
+            }
+          ],
+          "order": null
+        },
+        {
+          "id": 12,
+          "created_at": "2024-11-18T20:11:22.852934",
+          "updated_at": "2024-11-19T21:06:36.777592",
+          "title": "Grilled Vegetables",
+          "subItems": [
+            {
+              "id": 70,
+              "created_at": "2024-11-19T20:53:54.140654",
+              "updated_at": "2024-11-19T20:53:54.140654",
+              "name": "Grilled Zucchini",
+              "price": 100,
+              "quantity": 1,
+              "description": "Grilled Zucchini best",
+              "image": "GrilledZucchini.jpg",
+              "itemType": null
+            },
+            {
+              "id": 71,
+              "created_at": "2024-11-19T20:54:29.774427",
+              "updated_at": "2024-11-19T20:54:29.774427",
+              "name": "Grilled Eggplant",
+              "price": 120,
+              "quantity": 1,
+              "description": "Grilled Eggplant best",
+              "image": "GrilledEggplant.jpg",
+              "itemType": null
+            },
+            {
+              "id": 72,
+              "created_at": "2024-11-19T20:54:50.970599",
+              "updated_at": "2024-11-19T20:54:50.970599",
+              "name": "Grilled Mushrooms",
+              "price": 150,
+              "quantity": 1,
+              "description": "Grilled Mushrooms best",
+              "image": "GrilledMushrooms.jpg",
+              "itemType": null
+            },
+            {
+              "id": 73,
+              "created_at": "2024-11-19T20:55:12.874875",
+              "updated_at": "2024-11-19T20:55:12.875913",
+              "name": "Grilled Peppers",
+              "price": 120,
+              "quantity": 1,
+              "description": "Grilled Peppers best",
+              "image": "GrilledPeppers.jpg",
+              "itemType": null
+            },
+            {
+              "id": 74,
+              "created_at": "2024-11-19T20:55:43.327001",
+              "updated_at": "2024-11-19T20:55:43.327001",
+              "name": "Grilled Asparagus",
+              "price": 140,
+              "quantity": 1,
+              "description": "Grilled Asparagus best",
+              "image": "GrilledAsparagus.jpg",
+              "itemType": null
+            },
+            {
+              "id": 75,
+              "created_at": "2024-11-19T20:56:04.331578",
+              "updated_at": "2024-11-19T20:56:04.332524",
+              "name": "Grilled Corn",
+              "price": 160,
+              "quantity": 1,
+              "description": "Grilled Corn best",
+              "image": "GrilledCorn.jpg",
+              "itemType": null
+            }
+          ],
+          "order": null
+        }
+      ],
+      "users": []
+    }
+  ],
+  "status": "OK",
+  "message": "All items found."
 }

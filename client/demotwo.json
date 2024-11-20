@@ -1,0 +1,704 @@
+{
+  "menu": [
+    {
+      "restaurant": {
+        "name": "La Bella Italia",
+        "address": "456 Italian St",
+        "phone": "111-222-3333",
+        "email": "contact@labellaitalia.com",
+        "description": "Authentic Italian cuisine",
+        "image": "labella.jpg",
+        "totalTables": 15,
+        "tables": [],
+        "restaurantStatus": null,
+        "users": []
+      },
+      "items": [
+        {
+          "item_name": "Briyani",
+          "subItem": [
+            {
+              "name": "Mutton Briyani",
+              "details": {
+                "price": 150,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Chicken Briyani",
+              "details": {
+                "price": 120,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Egg Briyani",
+              "details": {
+                "price": 100,
+                "type": "Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Beef Briyani",
+              "details": {
+                "price": 160,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Fish Briyani",
+              "details": {
+                "price": 170,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Paneer Briyani",
+              "details": {
+                "price": 110,
+                "type": "Veg",
+                "quantity": 1
+              }
+            }
+          ]
+        },
+        {
+          "item_name": "Pizza",
+          "subItem": [
+            {
+              "name": "Margherita",
+              "details": {
+                "price": 200,
+                "type": "Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Pepperoni",
+              "details": {
+                "price": 250,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "BBQ Chicken",
+              "details": {
+                "price": 280,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Vegetable Supreme",
+              "details": {
+                "price": 220,
+                "type": "Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Hawaiian",
+              "details": {
+                "price": 260,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Four Cheese",
+              "details": {
+                "price": 240,
+                "type": "Veg",
+                "quantity": 1
+              }
+            }
+          ]
+        },
+        {
+          "item_name": "Pasta",
+          "subItem": [
+            {
+              "name": "Spaghetti Aglio e Olio",
+              "details": {
+                "price": 180,
+                "type": "Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Penne Arrabbiata",
+              "details": {
+                "price": 200,
+                "type": "Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Chicken Alfredo",
+              "details": {
+                "price": 230,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Carbonara",
+              "details": {
+                "price": 220,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Lasagna",
+              "details": {
+                "price": 260,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Veggie Lasagna",
+              "details": {
+                "price": 240,
+                "type": "Veg",
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "restaurant": {
+        "name": "Spicy Delights",
+        "address": "789 Spicy Rd",
+        "phone": "444-555-6666",
+        "email": "info@spicydelights.com",
+        "description": "Hot and spicy dishes",
+        "image": "spicydelights.jpg",
+        "totalTables": 20,
+        "tables": [],
+        "restaurantStatus": null,
+        "users": []
+      },
+      "items": [
+        {
+          "item_name": "Tacos",
+          "subItem": [
+            {
+              "name": "Chicken Taco",
+              "details": {
+                "price": 80,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Beef Taco",
+              "details": {
+                "price": 90,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Fish Taco",
+              "details": {
+                "price": 100,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Vegetarian Taco",
+              "details": {
+                "price": 70,
+                "type": "Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Pork Taco",
+              "details": {
+                "price": 110,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Shrimp Taco",
+              "details": {
+                "price": 120,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            }
+          ]
+        },
+        {
+          "item_name": "Burgers",
+          "subItem": [
+            {
+              "name": "Cheese Burger",
+              "details": {
+                "price": 150,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Chicken Burger",
+              "details": {
+                "price": 140,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Veggie Burger",
+              "details": {
+                "price": 120,
+                "type": "Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Fish Burger",
+              "details": {
+                "price": 160,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "BBQ Chicken Burger",
+              "details": {
+                "price": 180,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Bacon Burger",
+              "details": {
+                "price": 190,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            }
+          ]
+        },
+        {
+          "item_name": "Fried Rice",
+          "subItem": [
+            {
+              "name": "Chicken Fried Rice",
+              "details": {
+                "price": 130,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Vegetable Fried Rice",
+              "details": {
+                "price": 110,
+                "type": "Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Shrimp Fried Rice",
+              "details": {
+                "price": 140,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Beef Fried Rice",
+              "details": {
+                "price": 150,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Pork Fried Rice",
+              "details": {
+                "price": 160,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Egg Fried Rice",
+              "details": {
+                "price": 120,
+                "type": "Veg",
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "restaurant": {
+        "name": "Sushi World",
+        "address": "123 Sushi Blvd",
+        "phone": "333-444-5555",
+        "email": "contact@sushiworld.com",
+        "description": "Fresh and authentic sushi",
+        "image": "sushiworld.jpg",
+        "totalTables": 25,
+        "tables": [],
+        "restaurantStatus": null,
+        "users": []
+      },
+      "items": [
+        {
+          "item_name": "Sushi Rolls",
+          "subItem": [
+            {
+              "name": "California Roll",
+              "details": {
+                "price": 220,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Dragon Roll",
+              "details": {
+                "price": 250,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Tuna Roll",
+              "details": {
+                "price": 280,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Veggie Roll",
+              "details": {
+                "price": 180,
+                "type": "Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Salmon Roll",
+              "details": {
+                "price": 300,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Tempura Roll",
+              "details": {
+                "price": 270,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            }
+          ]
+        },
+        {
+          "item_name": "Sashimi",
+          "subItem": [
+            {
+              "name": "Salmon Sashimi",
+              "details": {
+                "price": 350,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Tuna Sashimi",
+              "details": {
+                "price": 380,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Yellowtail Sashimi",
+              "details": {
+                "price": 400,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Octopus Sashimi",
+              "details": {
+                "price": 420,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Mackerel Sashimi",
+              "details": {
+                "price": 390,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Scallop Sashimi",
+              "details": {
+                "price": 430,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            }
+          ]
+        },
+        {
+          "item_name": "Tempura",
+          "subItem": [
+            {
+              "name": "Shrimp Tempura",
+              "details": {
+                "price": 220,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Veg Tempura",
+              "details": {
+                "price": 190,
+                "type": "Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Mixed Tempura",
+              "details": {
+                "price": 250,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Squid Tempura",
+              "details": {
+                "price": 270,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Sweet Potato Tempura",
+              "details": {
+                "price": 200,
+                "type": "Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Tempura Udon",
+              "details": {
+                "price": 300,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "restaurant": {
+        "name": "Grill Master",
+        "address": "678 BBQ Lane",
+        "phone": "555-666-7777",
+        "email": "contact@grillmaster.com",
+        "description": "Grilled to perfection",
+        "image": "grillmaster.jpg",
+        "totalTables": 30,
+        "tables": [],
+        "restaurantStatus": null,
+        "users": []
+      },
+      "items": [
+        {
+          "item_name": "Steaks",
+          "subItem": [
+            {
+              "name": "Ribeye Steak",
+              "details": {
+                "price": 450,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "T-Bone Steak",
+              "details": {
+                "price": 500,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Filet Mignon",
+              "details": {
+                "price": 600,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Porterhouse Steak",
+              "details": {
+                "price": 550,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Sirloin Steak",
+              "details": {
+                "price": 400,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "New York Strip",
+              "details": {
+                "price": 480,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            }
+          ]
+        },
+        {
+          "item_name": "Grilled Chicken",
+          "subItem": [
+            {
+              "name": "Lemon Herb Chicken",
+              "details": {
+                "price": 220,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "BBQ Grilled Chicken",
+              "details": {
+                "price": 240,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Garlic Butter Chicken",
+              "details": {
+                "price": 230,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Spicy Grilled Chicken",
+              "details": {
+                "price": 250,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Cajun Grilled Chicken",
+              "details": {
+                "price": 260,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Balsamic Grilled Chicken",
+              "details": {
+                "price": 270,
+                "type": "Non-Veg",
+                "quantity": 1
+              }
+            }
+          ]
+        },
+        {
+          "item_name": "Grilled Vegetables",
+          "subItem": [
+            {
+              "name": "Grilled Zucchini",
+              "details": {
+                "price": 100,
+                "type": "Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Grilled Eggplant",
+              "details": {
+                "price": 110,
+                "type": "Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Grilled Mushrooms",
+              "details": {
+                "price": 120,
+                "type": "Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Grilled Peppers",
+              "details": {
+                "price": 130,
+                "type": "Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Grilled Asparagus",
+              "details": {
+                "price": 140,
+                "type": "Veg",
+                "quantity": 1
+              }
+            },
+            {
+              "name": "Grilled Corn",
+              "details": {
+                "price": 150,
+                "type": "Veg",
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

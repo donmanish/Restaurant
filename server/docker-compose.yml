@@ -1,0 +1,30 @@
+
+services:
+  db:
+    image: mysql:8
+    container_name: mysql_db_docker
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: restaurant
+    ports:
+      - "3307:3306"
+    volumes:
+      - db-data:/var/lib/mysql # Use a named volume for better compatibility
+
+  app:
+    build: .
+    container_name: restaurant_server
+    depends_on:
+      - db
+    environment:
+      MYSQL_HOST: db
+      MYSQL_PORT: 3306
+      MYSQL_DB: restaurant
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    ports:
+      - "8082:8080"
+
+
+volumes:
+  db-data: # Named volume for MySQL persistence

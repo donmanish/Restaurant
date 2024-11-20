@@ -106,7 +106,6 @@ public class DbStoreMenuService implements MenuService{
         // Initialize a new Item entity
         Item savedItem = new Item();
         savedItem.setTitle(item.getTitle());
-        savedItem.setItemType(item.getItemType());
         // Save the Item along with its associated SubItems
         itemRepositry.save(savedItem);
         return savedItem;
@@ -141,6 +140,7 @@ public class DbStoreMenuService implements MenuService{
         saveSubItem.setPrice(subItem.getPrice());
         saveSubItem.setImage(subItem.getImage());
         saveSubItem.setDescription(subItem.getDescription());
+        saveSubItem.setItemType(subItem.getItemType());
         try {
             Optional<Item> Otionalitems = itemRepositry.findByTitle(subItem.getItem().getTitle());
             if(Otionalitems == null){

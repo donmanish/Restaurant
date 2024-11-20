@@ -5,7 +5,7 @@
 #ENTRYPOINT ["java", "-jar", "backend-0.0.1-SNAPSHOT.jar"]
 
 # Step 1: Build the JAR using Maven
-FROM maven:3.8.4-openjdk-17-slim AS build
+FROM openjdk-17 AS build
 WORKDIR /app
 COPY pom.xml /app
 COPY src /app/src

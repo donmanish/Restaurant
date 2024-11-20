@@ -24,7 +24,10 @@ services:
       MYSQL_PASSWORD: root
     ports:
       - "8082:8080"
-
+    command: >
+     sh -c "./wait-for-it.sh db:3306 -- java -jar backend-0.0.1-SNAPSHOT.jar"
 
 volumes:
   db-data: # Named volume for MySQL persistence
+
+

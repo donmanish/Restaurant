@@ -13,6 +13,7 @@ import org.springframework.web.server.ResponseStatusException;
 import java.util.List;
 
 @RestController
+@CrossOrigin
 //@RequestMapping("/api/v1")
 public class RestaurentControler {
 

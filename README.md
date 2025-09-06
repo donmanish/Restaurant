@@ -94,7 +94,7 @@ The system is designed with a **client-server architecture**:
     
     Columns: id, name, cuisine, rating, location, price_range
 
-  ✅ Testing
+  # ✅ Testing
 
     Use Postman to test API endpoints:
     
